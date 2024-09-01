@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Especifica el conjunto de caracteres del documento como UTF-8 -->
+  <meta charset="UTF-8">
+  <!-- Configura la ventana gráfica para dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlace a un archivo CSS para resetear estilos predeterminados -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <!-- Enlace a un archivo CSS para los estilos personalizados de la página -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Título de la página que aparece en la pestaña del navegador -->
+  <title>PM1-RodrigoBentinNai</title>
+</head>
+
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Rodrigo Mario Bentin Nai</h1> <!-- Título principal de la página -->
+    <h3>My Web Page</h3> <!-- Subtítulo o descripción breve -->
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+    <!-- Sección sobre la información personal -->
+    <section>
+      <h1>SOBRE MI</h1> <!-- Encabezado de la sección -->
+      <p>Me llamo <b>Rodrigo</b>, soy de Córdoba (Argentina) y empece a estudiar en Henry porque quiero ser <b>Desarrollador Web FullStack</b> con orientación en <b>Front-End</b>. Quiero dar un cambio en mi vida y siento que esta es la oportunidad, por eso mismo no la desaprovecharé.</p>
+      <!-- Párrafo que describe información personal y objetivos -->
+    </section>
+    <br> <!-- Salto de línea -->
+    <hr> <!-- Línea horizontal -->
+    <br> <!-- Salto de línea -->
+
+    <!-- Sección que muestra tecnologías favoritas -->
+    <section>
+      <h3>MIS TECNOLOGIAS FAVORITAS</h3> <!-- Encabezado de la sección -->
+      <img src="./assets/img/html.png" alt=""> <!-- Imagen representando HTML -->
+      <img src="./assets/img/css.png" alt=""> <!-- Imagen representando CSS -->
+      <img src="./assets/img/js.png" alt=""> <!-- Imagen representando JavaScript -->
+    </section>
+    <br> <!-- Salto de línea -->
+    <hr> <!-- Línea horizontal -->
+    <br> <!-- Salto de línea -->
+
+    <!-- Sección para agregar y mostrar actividades favoritas -->
+    <section>
+      <h3>MIS ACTIVIDADES FAVORITAS</h3> <!-- Encabezado de la sección -->
+      <!-- Formulario para agregar una nueva actividad -->
+      <form action="" class="formulario">
+        <!-- Campo de texto para ingresar el nombre de la actividad -->
+        <label for="Actividad"></label>
+        <input type="text" id="actividad" name="actividad" maxlength="100" placeholder="Nombre de la Actividad">
+        <br> <!-- Salto de línea -->
+        <!-- Área de texto para ingresar la descripción de la actividad -->
+        <label for="Descripcion"></label>
+        <textarea name="text" id="comentarios" cols="60" rows="5" maxlength="500" placeholder="Descripcion de la Actividad"></textarea>
+        <br> <!-- Salto de línea -->
+        <!-- Campo de texto para ingresar la URL de una imagen -->
+        <label for="imagen"></label>
+        <input type="url" name="imagen" id="imagen" placeholder="Url de Imagen">
+        <br> <!-- Salto de línea -->
+        <!-- Botón para enviar el formulario -->
+        <div class="agregar">
+          <input type="submit" value="Agregar Actividad"/>              
+        </div>
+      </form>
+    </section>
+
+    <!-- Sección que contiene las tarjetas de actividades -->
+    <section class="contenedorTarjetas">
+      <h2>ACTIVIDADES</h2> <!-- Encabezado de la sección -->
+      <!-- Artículo que organiza las tarjetas de actividades -->
+      <article class="organizadorTarjetas">
+        <!-- Tarjeta individual que muestra una actividad -->
+        <div class="tarjeta">
+          <h2>Natacion</h2> <!-- Título de la actividad -->
+          <img src="/assets/img/Natacion-Michael-Phelps.jpg" alt=""/> <!-- Imagen representativa de la actividad -->
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eveniet eius iure quasi! Culpa voluptates eligendi, iste ratione odio totam recusandae ut, veniam maiores architecto, magnam fuga necessitatibus dolor numquam.</p>
+          <!-- Descripción de la actividad -->
+        </div>
+        <!-- Tarjeta individual que muestra otra actividad -->
+        <div class="tarjeta">
+          <h2>Basketball</h2> <!-- Título de la actividad -->
+          <img src="./assets/img/Baketball-MJ.jpeg" alt=""/> <!-- Imagen representativa de la actividad -->
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eveniet eius iure quasi! Culpa voluptates eligendi, iste ratione odio totam recusandae ut, veniam maiores architecto, magnam fuga necessitatibus dolor numquam.</p>
+          <!-- Descripción de la actividad -->
+        </div>
+        <!-- Tarjeta individual que muestra otra actividad -->
+        <div class="tarjeta">
+          <h2>Rugby</h2> <!-- Título de la actividad -->
+          <img src="./assets/img/Rugby-Jonah-Lomu.jpg" alt=""/> <!-- Imagen representativa de la actividad -->
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eveniet eius iure quasi! Culpa voluptates eligendi, iste ratione odio totam recusandae ut, veniam maiores architecto, magnam fuga necessitatibus dolor numquam.</p>
+          <!-- Descripción de la actividad -->
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p class="footer">Copyright (c) 2024 RODRIGO BENTIN<br>All Rights Reserved</p> 
+    <!-- Texto de copyright -->
+  </footer>
+
+  <!-- Enlace al archivo JavaScript que contiene la lógica de la página -->
+  <script src="./scripts/index.js"></script>
+</body>    
+
+</html>
+
